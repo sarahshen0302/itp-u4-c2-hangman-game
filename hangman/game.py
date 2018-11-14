@@ -1,16 +1,21 @@
 from .exceptions import *
 
+import random
+
+    
 # Complete with your own, just for fun :)
 LIST_OF_WORDS = []
 
 
 def _get_random_word(list_of_words):
-    pass
+    return random.choice(list_of_words)
 
 
 def _mask_word(word):
-    pass
-
+    masked = ""
+    for letter in word:
+        masked +="*"
+    return masked
 
 def _uncover_word(answer_word, masked_word, character):
     pass
